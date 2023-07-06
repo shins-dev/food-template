@@ -1,0 +1,126 @@
+.header {
+  margin-top: 33px;
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.button {
+  max-width: 393px;
+  max-height: 65px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  &-icon {
+    padding: 20px 22px;
+    position: absolute;
+  }
+  &-input {
+    margin-left: 71px;
+    input {
+      border: none;
+      padding: 20px 0;
+      opacity: 0.3;
+      margin-right: 33px;
+      color: $black-color;
+    }
+  }
+  &-icon-box {
+    position: absolute;
+    right: 25px;
+  }
+}
+.input{
+  &::placeholder{
+    font-size: 18px;
+    color: $black-color;
+    font-weight: 600;
+    line-height: normal;  
+  }
+}
+
+.logo {
+  margin-right: 448px;
+  max-width: 94px;
+  max-height: 56px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 67px;
+  margin-right: 187px;
+  &-item {
+    list-style-type: none;
+  }
+
+}
+@media (hover:hover){
+  .menu-link{
+    position: relative;
+    transition: all 0.2s linear;
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: auto;
+      right: 0;
+      width: 0;
+      height: 3px;
+      background-color: $origin-color;
+      transition: all 0.2s linear;
+    }
+    &:hover{
+      color: $origin-color;
+      &::after{
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+// @media screen and (max-width: 1279.98px) {
+//   .container{
+//     width: 1279px;
+//   }
+//   .header{
+//     margin-top: 20px;
+//     &-main{
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//     }
+//     &-input{
+//       margin-left: 0;
+//     }
+//     &-button{
+//     }
+
+//   }
+//   .button{
+//     max-width: 250px;
+//   max-height: 65px;
+//   }
+//   .menu {
+//     margin-right: 0;
+//     gap: 0 50px;
+//     &-item {
+//       list-style-type: none;
+//     }
+  
+//   }
+//   .logo{
+//     max-width: 200px;
+//     margin-right: 0;
+//   }
+
+// }

@@ -1,0 +1,35 @@
+.text{
+  line-height: normal;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black-color;
+  &-title{
+    font-size: 95px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &-nav{
+    color: $black-color;
+  }
+  &-slider{
+    font-size: 26px;
+    font-weight: 700;
+  }
+  &-heading{
+    font-size: 36px;
+    font-weight: 700;
+  }
+  &-desc {
+    font-weight: 500;
+  }
+  &-smail{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &-origin{
+    color: $origin-color;
+  }
+  &-red{
+    color: #EE140A;
+  }
+}
